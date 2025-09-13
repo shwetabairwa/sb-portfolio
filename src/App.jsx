@@ -30,24 +30,26 @@ export default function App() {
   const articles = [
     {
       id: 1,
-      title: "The simplest example is Kafka + Golang",
+      title: "Optimising Performance in a Full-Stack App",
       subtitle:
-        "This article presents a simple way to implement a micro-service architecture using Kafka, Golang and Docker.",
-      img: "https://images.unsplash.com/photo-1526925539332-aa3b66e35444?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "When I first built my full-stack app, I was proud that it worked. The frontend displayed data, the backend served it,",
+        img: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
     },
     {
       id: 2,
-      title: "Microservices with Node.js + RabbitMQ",
+      title: "State Management in React: useState vs useReducer vs Redux",
       subtitle:
-        "Learn how to implement message queues with Node.js and RabbitMQ for distributed systems.",
-      img: "https://images.unsplash.com/photo-1643951391300-8c303644b40f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "When working with React, one of the biggest challenges developers face is managing state effectively. As applications grow, handling state transitions becomes increasingly complex. Should you stick with useState, switch to useReducer, or go for a global state management library like Redux? Let’s break it down in simple terms.",
+        img: "https://images.unsplash.com/photo-1623870606070-c41ac6c46a4d?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
     },
     {
       id: 3,
-      title: "Event Streaming with Kafka",
+      title: "Building My First CRUD App with React and Node.js",
       subtitle:
-        "Discover how to scale real-time event streaming using Kafka clusters efficiently.",
-      img: "https://images.unsplash.com/photo-1607877361964-bf792b65e593?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "When I started learning full-stack development, one of the first challenges I gave myself was to build a CRUD application. CRUD stands for Create, Read, Update, Delet",
+      img: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2240&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
 
