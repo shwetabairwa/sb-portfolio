@@ -14,14 +14,13 @@ import {
 import { FaHashnode } from "react-icons/fa6";
 
 // Lucide React
-import { AlignJustify, ArrowLeft, ArrowRight, Heart, HeartIcon, Link, Mail } from "lucide-react";
+import { AlignJustify, ArrowLeft, ArrowRight, Link,  } from "lucide-react";
 
 // Assets
 import MyImage from "./assets/3.png";
 import Project2 from "./assets/2.png";
 import Project1 from "./assets/1.png";
-import { BiHeart } from "react-icons/bi";
-import { FiHeart } from "react-icons/fi";
+
 
 export default function App() {
   const [isOpen, setIsOpen] = useState(false);
