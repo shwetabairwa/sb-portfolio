@@ -1,14 +1,496 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SB Porfolio</title>
+    <title>SB Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- React icons and Lucide icons would normally come from React, here we replace with placeholder spans/icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
-    <div id="root"></div>
-    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- HEADER -->
+    <header class="header">
+      <h2 class="logo"> <img src="./assets/logo.png" alt="logo" class="logo-icon" /> portfolio.</h2>
+
+      <!-- Web Nav -->
+      <nav class="nav-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#article">Article</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger -->
+      <button class="hamburger">
+        <i class="fa fa-bars"></i>
+      </button>
+    </header>
+
+    <!-- SIDE DRAWER -->
+    <nav class="side-drawer">
+      <i class="fa fa-times arrow-icon"></i>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#article">Article</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-row">
+          <h1>Full-stack</h1>
+          <h1 class="right">Developer</h1>
+        </div>
+        <p class="custom-para">
+          My goal is to <span class="highlight">write</span>
+          <span class="highlight"> maintainable</span>,
+          <span class="highlight"> clean</span>, and
+          <span class="highlight"> understandable</span>
+          <span class="highlight"> code</span> that makes the development
+          process enjoyable.
+        </p>
+        <div class="btnRow">
+          <button class="btn">Projects</button>
+          <a class="btn1" href="#projects">
+            <i class="fa fa-arrow-right arrow-icon"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL -->
+    <section class="social">
+      <a
+        href="https://github.com/shwetabairwa"
+        target="_blank"
+        class="social-btn"
+      >
+        <i class="fa-brands fa-github"></i> <span>GitHub</span>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/shwetabairwa027/"
+        target="_blank"
+        class="social-btn"
+      >
+        <i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span>
+      </a>
+      <a
+        href="https://www.instagram.com/the_code_journey/"
+        target="_blank"
+        class="social-btn"
+      >
+        <i class="fa-brands fa-instagram"></i> <span>Instagram</span>
+      </a>
+      <a
+        href="https://hashnode.com/@the-code-journey"
+        target="_blank"
+        class="social-btn"
+      >
+      <i class="fa-brands fa-hashnode"></i> <span>HashNode</span>
+      </a>
+    </section>
+
+    <!-- ARTICLES -->
+    <section class="articles">
+      <div
+        class="article-card"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2340&auto=format&fit=crop');
+        "
+      >
+        <div class="overlay">
+          <h3>Optimising Performance in a Full-Stack App</h3>
+          <p>
+            When I first built my full-stack app, I was proud that it worked.
+            The frontend displayed data, the backend served it,
+          </p>
+          <div class="btnRow">
+            <button
+              class="btn small-btn"
+              onclick="window.open('https://shwetabairwa.hashnode.dev/optimising-performance-in-a-full-stack-app','_blank')"
+            >
+              Read more
+            </button>
+            <button
+              class="btn1"
+              onclick="window.open('https://shwetabairwa.hashnode.dev/optimising-performance-in-a-full-stack-app','_blank')"
+            >
+              <i class="fa fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- NAVIGATION -->
+      <div class="article-nav">
+        <button><i class="fa fa-arrow-left"></i></button>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button><i class="fa fa-arrow-right"></i></button>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div>
+        <p class="title">../About me...</p>
+        <p class="custom-para about-para">
+          Hello, I'm Shweta, a
+          <span class="highlight">Full Stack & Mobile App Developer</span> with
+          <span class="highlight">one year</span> of experience building
+          responsive web and cross-platform mobile apps using
+          <span class="highlight"
+            >React.js, React Native, Node.js, Express.js,</span
+          >
+          and <span class="highlight">Firebase</span>. Skilled in RESTful APIs,
+          database design (<span class="highlight">SQL, MongoDB, Firebase</span
+          >), and CI/CD deployments. Published apps on
+          <span class="highlight">Play Store & App Store</span> (1K+ downloads)
+          and improved app performance by
+          <span class="highlight">30%</span> through optimisation.
+        </p>
+      </div>
+      <img src="./assets/3.png" alt="Profile" />
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills">
+      <div class="skill-card white-card">
+        <h3>Frontend & Mobile</h3>
+        <p>
+          React.js / React Native / Flutter / Next.js / JavaScript (ES6+) /
+          TypeScript / Dart / React Router / Redux Toolkit / Context API / API
+          integration / Firebase / Google Maps API
+        </p>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-card black-card">
+          <h3>Styles</h3>
+          <p>
+            CSS3 / Tailwind CSS / Bootstrap / Material UI / Sass / Responsive
+            Design
+          </p>
+        </div>
+        <div class="skill-box">
+          <a
+            href="https://github.com/shwetabairwa"
+            target="_blank"
+            class="social-btn circle"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <button class="btn1">
+            <i class="fa fa-arrow-left rotate"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="skill-card black-card">
+        <h3>Backend</h3>
+        <p>
+          Node.js / Express.js / RESTful APIs / MongoDB / PostgreSQL / SQL / JWT
+          Authentication / Firebase / Basic GraphQL
+        </p>
+      </div>
+
+      <div class="skill-card black-card">
+        <h3>DevOps & Deployment</h3>
+        <p>
+          Git / GitHub / CI/CD / Cloud Hosting (AWS / Render / Hostinger) / Play
+          Store / App Store Deployment
+        </p>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="work" id="work">
+      <h1 class="work-title">Work</h1>
+      <div class="work-row">
+        <div class="work-left">
+          <p>2025 – Present</p>
+          <p>1 year 1 months</p>
+        </div>
+        <div class="work-right">
+          <p class="company">Tach Matpatra Pvt Lmd</p>
+          <p class="role">React App Developer | React Native</p>
+        </div>
+      </div>
+      <div class="work-row white-row">
+        <div class="work-left">
+          <p>2024 – 2025</p>
+          <p>4 months</p>
+        </div>
+        <div class="work-right">
+          <p class="company">Tach Matpatra Pvt Lmd</p>
+          <p class="role">Frontend Developer | React js</p>
+        </div>
+      </div>
+      <div class="work-row">
+        <div class="work-left">
+          <p>2024 – 2024</p>
+          <p>3 months</p>
+        </div>
+        <div class="work-right">
+          <p class="company">MingleLoans.</p>
+          <p class="role">Frontend Developer | React JS & Javascript</p>
+        </div>
+      </div>
+      <div class="work-row">
+        <div class="work-left">
+          <p>2020 – 2021</p>
+          <p>9 months</p>
+        </div>
+        <div class="work-right">
+          <p class="company">Blue Hawk</p>
+          <p class="role">Frontend Developer | Flutter & Dart</p>
+        </div>
+      </div>
+      <div class="work-total">
+        <p class="custom-para work-box">
+          Work experience <span class="highlight">2 years 1 months</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECT -->
+    <p class="title pro-title">../Projects...</p>
+    <h1 class="work-title article-title project-title2">Project</h1>
+    <section class="project" id="projects">
+      <div class="card-border">
+        <div
+          class="article-card project-card"
+          style="background-image: url('./assets/2.png')"
+        >
+          <div class="project-overley"></div>
+        </div>
+        <p class="title project-title">Material Dukaan – E-Commerce Website</p>
+        <div class="project-skill">
+          <p class="social-btn skill-btn"><span>React.js</span></p>
+          <p class="social-btn skill-btn"><span>Redux Toolkit</span></p>
+          <p class="social-btn skill-btn"><span>Firebase</span></p>
+          <p class="social-btn skill-btn"><span>JavaScript</span></p>
+          <p class="social-btn skill-btn"><span>Responsive Design</span></p>
+        </div>
+        <p class="custom-para project-para">
+          Built a
+          <span class="highlight">responsive e-commerce website</span> for
+          selling
+          <span class="highlight"> raw materials and building materials</span>.
+          Integrated
+          <span class="highlight"> Firebase Authentication & Firestore</span>
+          for secure user login, product management, and order storage.
+          <br /><br />✅ Designed a
+          <span class="highlight">modern, mobile-friendly UI</span> with
+          React.js, ensuring smooth navigation across devices. <br />✅
+          Implemented <span class="highlight">Redux Toolkit</span> for state
+          management, enabling seamless cart updates, filters, and order
+          tracking. <br />✅ Added
+          <span class="highlight">real-time database integration</span> with
+          Firebase for efficient product listing and order management. <br />✅
+          Focused on
+          <span class="highlight">scalable and clean code structure</span>
+          to support future feature expansion.
+        </p>
+        <div class="skill-box project-box">
+          <a
+            href="https://materialdukaan.com/"
+            target="_blank"
+            class="social-btn circle"
+          >
+            <i class="fa fa-link"></i>
+          </a>
+          <button class="btn1"><i class="fa fa-arrow-left rotate"></i></button>
+        </div>
+      </div>
+
+      <div class="card-border">
+        <div
+          class="article-card project-card"
+          style="background-image: url('./assets/1.png')"
+        >
+          <div class="project-overley"></div>
+        </div>
+        <p class="title project-title">
+          TM Parlour – Salon & Beauty Service App | iOS | Android
+        </p>
+        <div class="project-skill">
+          <p class="social-btn skill-btn"><span>React Native</span></p>
+          <p class="social-btn skill-btn"><span>Firebase</span></p>
+          <p class="social-btn skill-btn"><span>Redux Toolkit</span></p>
+          <p class="social-btn skill-btn"><span>Google Maps API</span></p>
+        </div>
+        <p class="custom-para project-para">
+          Built and published a
+          <span class="highlight">cross-platform mobile app</span> (Android/iOS)
+          for salon bookings, supporting real-time scheduling and customer
+          profiles. Integrated Firebase Authentication, Google Maps API, and
+          push notifications, improving booking efficiency. Designed a
+          responsive UI with Redux Toolkit state management, achieving smooth
+          navigation and reduced booking drop-offs. <br /><br />✅ App published
+          on <span class="highlight">App Store & Play Store</span>, achieving
+          <span class="highlight"> 1K+ downloads</span> in the first month with
+          positive user feedback on usability. <br />✅ Improved booking
+          efficiency by enabling
+          <span class="highlight"> real-time scheduling & notifications</span>.
+        </p>
+        <div class="skill-box project-box">
+          <a
+            href="https://apps.apple.com/app/tm-parlour"
+            target="_blank"
+            class="social-btn circle"
+          >
+            <i class="fa fa-link"></i>
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.tmparlour"
+            target="_blank"
+            class="social-btn circle"
+          >
+            <i class="fa fa-link"></i>
+          </a>
+          <button class="btn1"><i class="fa fa-arrow-left rotate"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <h1 class="work-title article-title">Article</h1>
+    <section class="articles2" id="article">
+      <div class="article2-card">
+        <h3>Optimising Performance in a Full-Stack App</h3>
+        <p>
+          When I first built my full-stack app, I was proud that it worked. The
+          frontend displayed data, the backend served it, and the database
+          stored it. But soon, I noticed something: 
+        </p>
+        <div class="btnRow">
+          <button
+            class="btn small-btn"
+            onclick="window.open('https://shwetabairwa.hashnode.dev/optimising-performance-in-a-full-stack-app','_blank')"
+          >
+            Read more
+          </button>
+          <button
+            class="btn1"
+            onclick="window.open('https://shwetabairwa.hashnode.dev/optimising-performance-in-a-full-stack-app','_blank')"
+          >
+            <i class="fa fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="article2-card">
+        <h3>State Management in React: useState vs useReducer vs Redux</h3>
+        <p>
+          When working with React, one of the biggest challenges developers face
+          is managing state effectively. As applications grow, handling state
+          transitions becomes increasingly complex.
+        </p>
+        <div class="btnRow">
+          <button
+            class="btn small-btn"
+            onclick="window.open('https://shwetabairwa.hashnode.dev/state-management-in-react-usestate-vs-usereducer-vs-redux','_blank')"
+          >
+            Read more
+          </button>
+          <button
+            class="btn1"
+            onclick="window.open('https://shwetabairwa.hashnode.dev/state-management-in-react-usestate-vs-usereducer-vs-redux','_blank')"
+          >
+            <i class="fa fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="article2-card">
+        <h3>Building My First CRUD App with React and Node.js</h3>
+        <p>
+          When I started learning full-stack development, one of the first
+          challenges I gave myself was to build a CRUD application. CRUD stands
+          for Create, Read, Update, Delete
+        </p>
+        <div class="btnRow">
+          <button
+            class="btn small-btn"
+            onclick="window.open('https://shwetabairwa.hashnode.dev/building-my-first-crud-app-with-react-and-nodejs','_blank')"
+          >
+            Read more
+          </button>
+          <button
+            class="btn1"
+            onclick="window.open('https://shwetabairwa.hashnode.dev/building-my-first-crud-app-with-react-and-nodejs','_blank')"
+          >
+            <i class="fa fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <p class="title contact-title">../Contact..</p>
+      <div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#article">Article</a></li>
+        </ul>
+      </div>
+      <div class="hero-row contact-row">
+        <h1>Shweta</h1>
+        <h1 class="right">Bairwa</h1>
+      </div>
+      <div class="contact-btn">
+        <a
+          href="https://github.com/shwetabairwa"
+          target="_blank"
+          class="social-btn"
+        >
+          <i class="fa-brands fa-github"></i> <span>GitHub</span>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/shwetabairwa027/"
+          target="_blank"
+          class="social-btn"
+        >
+          <i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span>
+        </a>
+        <a
+          href="https://www.instagram.com/the_code_journey/"
+          target="_blank"
+          class="social-btn"
+        >
+          <i class="fa-brands fa-instagram"></i> <span>Instagram</span>
+        </a>
+        <a
+          href="https://hashnode.com/@the-code-journey"
+          target="_blank"
+          class="social-btn"
+        >
+  
+          <i class="fa-brands fa-hashnode"></i> <span>HashNode</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="work-total contact-detail">
+      <p class="custom-para work-box">
+        shwetabairwa027@gmail.com
+        <span class="highlight">+91-9871617208</span>
+      </p>
+    </section>
   </body>
 </html>
