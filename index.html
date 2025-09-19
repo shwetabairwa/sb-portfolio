@@ -22,8 +22,11 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#article">Article</a></li>
+          <li><a href="#artical">Artical</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a  href="https://wa.me/919871617208?text=Hi%20Shweta%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect." 
+            target="_blank" 
+            class="button">Let's Talk</a></li>
         </ul>
       </nav>
 
@@ -40,8 +43,11 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#article">Article</a></li>
+        <li><a href="#artical">Artical</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a  href="https://wa.me/919871617208?text=Hi%20Shweta%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect." 
+          target="_blank" 
+          class="button">Let's Talk</a></li>
       </ul>
     </nav>
 
@@ -61,7 +67,7 @@
           process enjoyable.
         </p>
         <div class="btnRow">
-          <button class="btn">Projects</button>
+          <button class="btn" ><a href="#projects">Projects</a></button>
           <a class="btn1" href="#projects">
             <i class="fa fa-arrow-right arrow-icon"></i>
           </a>
@@ -101,10 +107,10 @@
       </a>
     </section>
 
-    <!-- ARTICLES -->
-    <section class="articles">
+    <!-- Articals -->
+    <section class="articals">
       <div
-        class="article-card"
+        class="artical-card"
         style="
           background-image: url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2340&auto=format&fit=crop');
         "
@@ -133,7 +139,7 @@
       </div>
 
       <!-- NAVIGATION -->
-      <div class="article-nav">
+      <div class="artical-nav">
         <button><i class="fa fa-arrow-left"></i></button>
         <div class="dots">
           <span class="dot active"></span>
@@ -269,11 +275,11 @@
 
     <!-- PROJECT -->
     <p class="title pro-title">../Projects...</p>
-    <h1 class="work-title article-title project-title2">Project</h1>
+    <h1 class="work-title artical-title project-title2">Project</h1>
     <section class="project" id="projects">
       <div class="card-border">
         <div
-          class="article-card project-card"
+          class="artical-card project-card"
           style="background-image: url('./assets/2.png')"
         >
           <div class="project-overley"></div>
@@ -320,7 +326,7 @@
 
       <div class="card-border">
         <div
-          class="article-card project-card"
+          class="artical-card project-card"
           style="background-image: url('./assets/1.png')"
         >
           <div class="project-overley"></div>
@@ -368,9 +374,9 @@
       </div>
     </section>
 
-    <h1 class="work-title article-title">Article</h1>
-    <section class="articles2" id="article">
-      <div class="article2-card">
+    <h1 class="work-title artical-title">Artical</h1>
+    <section class="articals2" id="artical">
+      <div class="artical2-card">
         <h3>Optimising Performance in a Full-Stack App</h3>
         <p>
           When I first built my full-stack app, I was proud that it worked. The
@@ -392,7 +398,7 @@
           </button>
         </div>
       </div>
-      <div class="article2-card">
+      <div class="artical2-card">
         <h3>State Management in React: useState vs useReducer vs Redux</h3>
         <p>
           When working with React, one of the biggest challenges developers face
@@ -414,7 +420,7 @@
           </button>
         </div>
       </div>
-      <div class="article2-card">
+      <div class="artical2-card">
         <h3>Building My First CRUD App with React and Node.js</h3>
         <p>
           When I started learning full-stack development, one of the first
@@ -446,9 +452,27 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#article">Article</a></li>
+          <li><a href="#artical">Artical</a></li>
         </ul>
       </div>
+      <div class="artical2-card">
+
+        <ul class="achievements">
+          <li>
+            <strong>Enhanced User Engagement:</strong> Boosted dashboard engagement by 25%
+          </li>
+          <li>
+            <strong>API Integration Success:</strong> Integrated 50+ APIs with a Lighthouse score of 91
+          </li>
+          <li>
+            <strong>NPM Package Publication:</strong> Published 2 reusable front-end packages
+          </li>
+          <li>
+            <strong>Internship Fast-Track & Promotion:</strong> Completed 6-month internship in 4 months; promoted to React Native Developer
+          </li>
+        </ul>
+      </div>
+      
       <div class="hero-row contact-row">
         <h1>Shweta</h1>
         <h1 class="right">Bairwa</h1>
@@ -492,5 +516,29 @@
         <span class="highlight">+91-9871617208</span>
       </p>
     </section>
+    <script>
+      // Select elements
+      const hamburger = document.querySelector(".hamburger");
+      const sideDrawer = document.querySelector(".side-drawer");
+      const closeBtn = document.querySelector(".side-drawer .fa-times");
+    
+      // Open drawer on hamburger click
+      hamburger.addEventListener("click", () => {
+        sideDrawer.classList.add("open");
+      });
+    
+      // Close drawer on close button click
+      closeBtn.addEventListener("click", () => {
+        sideDrawer.classList.remove("open");
+      });
+    
+      // Optional: Close drawer when clicking outside
+      window.addEventListener("click", (e) => {
+        if (e.target === sideDrawer) {
+          sideDrawer.classList.remove("open");
+        }
+      });
+    </script>
+    
   </body>
 </html>

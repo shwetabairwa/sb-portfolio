@@ -93,10 +93,11 @@ body::after {
   padding: 1rem 2rem 1.6rem 0;
   border-bottom: 0.1px solid #fff;
   filter: blur(1px);
+  font-style: italic;
 }
 .logo-icon{
     width: 35px;
-    height: 35px;
+    height: 30px;
 }
 .hamburger {
   font-size: 1.8rem;
@@ -105,7 +106,16 @@ body::after {
   color: white;
   cursor: pointer;
 }
+.button{
+  box-shadow: 0 0 0 0.4px #fff;
+    border-radius: 30px;
+   
+    padding: 0.6rem 1.6rem;
 
+}
+.button1{
+  margin-top: 2rem;
+}
 /* ================= SIDE DRAWER ================= */
 .side-drawer {
   position: fixed;
@@ -129,6 +139,7 @@ body::after {
   right: 15px;
   font-size: 2rem;
   background: none;
+  
   border: none;
   color: white;
   cursor: pointer;
@@ -136,11 +147,12 @@ body::after {
 
 .side-drawer ul {
   list-style: none;
+
   padding: 2rem 0.6rem;
 }
 
 .side-drawer ul li {
-  margin: 1.2rem 0;
+  margin: 2.5rem 0;
 }
 
 .side-drawer ul li a {
@@ -148,6 +160,7 @@ body::after {
   font-family: "Merriweather", serif;
   font-size: 1.1rem;
   color: white;
+ 
   transition: color 0.3s;
 }
 
@@ -160,7 +173,6 @@ body::after {
   height: 70px;
   background: #131313;
   display: flex;
-
   justify-content: space-between;
   align-items: center;
 }
@@ -176,11 +188,13 @@ body::after {
 }
 
 .nav-links {
+  
   display: none; /* hidden on mobile */
 }
 
 .nav-links ul {
   display: flex;
+  align-items: center;
   list-style: none;
   gap: 2rem;
 }
@@ -374,8 +388,8 @@ body::after {
     color: #131313;
   }
 
-  /* ===== ARTICLES ===== */
-  .articles {
+  /* ===== articalS ===== */
+  .articals {
     display: none;
     flex-direction: column;
     align-items: center;
@@ -384,7 +398,7 @@ body::after {
     padding: 1.5rem;
   }
 
-  .article-card {
+  .artical-card {
     position: relative;
     width: 95%;
     height: 400px;
@@ -395,7 +409,7 @@ body::after {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
   }
 
-  .article-card .overlay {
+  .artical-card .overlay {
     position: absolute;
     bottom: 0;
     height: 50%;
@@ -407,14 +421,14 @@ body::after {
     color: #fff;
   }
 
-  .article-card h3 {
+  .artical-card h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 0.6rem;
   }
 
-  .article-card p {
+  .artical-card p {
     font-family: "Merriweather", serif;
     font-size: 0.85rem;
     margin: 1rem;
@@ -433,7 +447,7 @@ body::after {
     border: none;
   }
 
-  .article-nav {
+  .artical-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -442,7 +456,7 @@ body::after {
     margin-top: 1.2rem;
   }
 
-  .article-nav button {
+  .artical-nav button {
     width: 40px;
     height: 40px;
     border: 1px solid #fff;
@@ -720,8 +734,8 @@ body::after {
     font-size: 0.8rem;
     margin: 0;
   }
-  /* ===== ARTICLES2 ===== */
-  .articles2 {
+  /* ===== articalS2 ===== */
+  .articals2 {
     display: grid;
     gap: 1rem;
 
@@ -732,10 +746,10 @@ body::after {
     /* padding: 1.5rem; */
     width: 80%;
   }
-  .article-title {
+  .artical-title {
     margin-top: 5rem;
   }
-  .article2-card {
+  .artical2-card {
     gap: 1rem;
     border-radius: 20px;
     padding: 1.5rem;
@@ -743,7 +757,7 @@ body::after {
     box-shadow: 0 0 0 0.1px #fff;
   }
 
-  .article2-card h3 {
+  .artical2-card h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
@@ -751,7 +765,7 @@ body::after {
     color: #fff;
   }
 
-  .article2-card p {
+  .artical2-card p {
     font-family: "Merriweather", serif;
     font-size: 0.9rem;
     margin-bottom: 1rem;
@@ -759,7 +773,7 @@ body::after {
     line-height: 1.5;
   }
 
-  .article2-card .btnRow {
+  .artical2-card .btnRow {
     display: flex;
     justify-content: flex-start;
   }
@@ -807,7 +821,26 @@ body::after {
     margin-top: 1.5rem;
     margin-bottom: 3rem;
   }
+  .achievements {
+    margin-top: 15px;
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    padding-left: 20px;
+    list-style-type: "✔ "; /* adds checkmark before each */
+  }
+  
+  .artical2-card .achievements li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
 
+  
+
+
+
+  
   .contact-btn .social-btn {
     padding: 0.8rem;
     flex: 2;
@@ -943,7 +976,10 @@ body::after {
     justify-content: center;
     height: 48px;
   }
-
+a{
+  text-decoration: none;
+  color: #000;
+}
   .btn1 {
     background: #fff;
     border: none;
@@ -1009,8 +1045,8 @@ body::after {
     color: #131313;
   }
 
-  /* ===== ARTICLES ===== */
-  .articles {
+  /* ===== articalS ===== */
+  .articals {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1019,7 +1055,7 @@ body::after {
     padding: 1.5rem;
   }
 
-  .article-card {
+  .artical-card {
     position: relative;
     width: 95%;
     height: 400px;
@@ -1030,7 +1066,7 @@ body::after {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
   }
 
-  .article-card .overlay {
+  .artical-card .overlay {
     position: absolute;
     bottom: 0;
     height: 50%;
@@ -1042,14 +1078,14 @@ body::after {
     color: #fff;
   }
 
-  .article-card h3 {
+  .artical-card h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 0.6rem;
   }
 
-  .article-card p {
+  .artical-card p {
     font-family: "Merriweather", serif;
     font-size: 0.85rem;
     margin: 1rem;
@@ -1068,7 +1104,7 @@ body::after {
     border: none;
   }
 
-  .article-nav {
+  .artical-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1077,7 +1113,7 @@ body::after {
     margin-top: 1.2rem;
   }
 
-  .article-nav button {
+  .artical-nav button {
     width: 40px;
     height: 40px;
     border: 1px solid #fff;
@@ -1344,8 +1380,8 @@ body::after {
     padding: 0;
     /* gap: 0.4rem; */
   }
-  /* ===== ARTICLES2 ===== */
-  .articles2 {
+  /* ===== articalS2 ===== */
+  .articals2 {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -1353,10 +1389,10 @@ body::after {
     /* padding: 1.5rem; */
     width: 100%;
   }
-  .article-title {
+  .artical-title {
     margin: 0;
   }
-  .article2-card {
+  .artical2-card {
     gap: 1rem;
     border-radius: 20px;
     padding: 1.5rem;
@@ -1364,7 +1400,7 @@ body::after {
     box-shadow: 0 0 0 0.1px #fff;
   }
 
-  .article2-card h3 {
+  .artical2-card h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
@@ -1372,7 +1408,7 @@ body::after {
     color: #fff;
   }
 
-  .article2-card p {
+  .artical2-card p {
     font-family: "Merriweather", serif;
     font-size: 0.9rem;
     margin-bottom: 1rem;
@@ -1380,7 +1416,7 @@ body::after {
     line-height: 1.5;
   }
 
-  .article2-card .btnRow {
+  .artical2-card .btnRow {
     display: flex;
     justify-content: flex-start;
   }
@@ -1408,7 +1444,20 @@ body::after {
     font-weight: 700;
     color: #fff;
   }
-
+  .achievements {
+    margin-top: 15px;
+    display: flex;
+   width: 100%;
+    flex-direction: column;
+    padding-left: 20px;
+    list-style-type: "✔ "; /* adds checkmark before each */
+  }
+  
+  .artical2-card .achievements li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
   .contact-row h1 {
     margin: 0;
     text-transform: uppercase;
