@@ -372,12 +372,14 @@ body::after {
     box-shadow: 0 0 0 0.6px #ffffffae;
     transition: all 0.3s ease;
   }
-
+  .hide{
+    display: none;
+  }
   .social-btn svg {
     font-size: 1.1rem;
     transition: inherit;
   }
-
+ 
   .social-btn:hover {
     background: #fff;
     color: #131313;
@@ -637,10 +639,17 @@ body::after {
   .role {
     font-size: 0.9rem;
   }
+.work-total{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
+}
   .work-total p {
     text-align: right;
-    width: 98%;
+    /* width: 98%; */
 
     font-size: 1rem;
     font-weight: 600;
@@ -652,7 +661,10 @@ body::after {
     display: flex;
     flex-direction: column;
   }
-
+  .button-contact{
+  margin-left: 30px;
+  color: #cfcfcf;
+  }
   /* ===== PROJECTS ===== */
   .project {
     display: grid;
@@ -1511,9 +1523,16 @@ a{
   .contact ul li a:hover {
     color: #f0c040;
   }
+  .button-contact{
+    margin-right: 15px;
+    color: #cfcfcf;
+    margin-bottom: 30px;
+    }
   .contact-detail {
     margin: 0;
     width: 100%;
+   display: flex;
+   flex-direction: column-reverse;   
     font-size: 0.9rem;
     padding: 0.1rem;
     border-top: 0.1px solid #fff;
